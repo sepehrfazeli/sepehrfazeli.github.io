@@ -112,12 +112,13 @@ main {
 #linkedin {
     margin-left: -8px ;
     margin-right:0px ;
+    height: 3rem;
 }
 #gitHub{
-    height: 90%;
+    height: 2.5rem;
 }
 #email {
-    height: 80%;
+    height: 2.5rem;
 }
 #second img {
   width: 100%;
