@@ -6,6 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "gatsby develop",
@@ -41,6 +42,7 @@
     "three": "^0.141.0"
   },
   "devDependencies": {
-    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27"
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27",
+    "gh-pages": "^4.0.0"
   }
 }

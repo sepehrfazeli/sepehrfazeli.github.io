@@ -7,6 +7,7 @@ const googleTagId = process.env.GOOGLE_PROPERTY_ID
 const githubToken = process.env.GITHUB_TOKEN
 
 const config: GatsbyConfig = {
+  pathPrefix: "/sepehrfazeli.github.io",
   siteMetadata: {
     title: `Gatsby Themes by LekoArts`,
     titleAlt: `Free & Open Source Gatsby Themes by LekoArts`,
