@@ -21,8 +21,8 @@
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --header-color: hsl(var(--hue-color), 60%, 99%);
-    --header1-color: hsla(var(--hue-color), 60%, 99%,0.5);
-    --header2-color: hsla(var(--hue-color), 60%, 99%,0.1);
+    --header1-color: hsla(var(--hue-color), 0%, 61%,0.2);
+    --header2-color: hsla(var(--hue-color), 0%, 61%,0.05);
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
