@@ -21,6 +21,8 @@
   --input-color: hsl(var(--hue-color), 70%, 96%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --header-color: hsla(var(--hue-color), 0%, 61%, 0.6);
+  --header1-color: hsla(var(--hue-color), 0%, 61%,0.2);
+  --header2-color: hsla(var(--hue-color), 0%, 61%,0.05);
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
@@ -151,6 +153,9 @@ img {
 textarea {
   resize: none;
 }
+em {
+  margin-left: 1%;
+}
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
@@ -192,6 +197,9 @@ textarea {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--header-color);
+  /* background: linear-gradient(to right bottom 
+  ,var(--header1-color)
+  ,var(--header2-color)); */
   backdrop-filter: blur(.6rem);
 }
 
