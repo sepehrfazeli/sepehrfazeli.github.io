@@ -154,7 +154,7 @@ textarea {
   resize: none;
 }
 em {
-  margin-left: 1%;
+  margin-left: 2%;
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/
@@ -382,6 +382,7 @@ em {
   font-weight: var(--font-medium);
   outline: none;
   border: none;
+  margin: 0.2rem;
 }
 
 .button:hover {
