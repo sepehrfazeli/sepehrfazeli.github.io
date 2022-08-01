@@ -542,32 +542,24 @@ em {
   background-color: var(--first-color);
 }
 
-.skills__html {
+.skills__90 {
   width: 90%;
 }
 
-.skills__css {
+.skills__80 {
   width: 80%;
 }
 
-.skills__js {
-  width: 60%;
-}
-
-.skills__react {
+.skills__70 {
   width: 70%;
 }
 
-.skills__git {
+.skills__60 {
+  width: 60%;
+}
+
+.skills__50 {
   width: 50%;
-}
-
-.skills__vscode {
-  width: 70%;
-}
-
-.skills__social {
-  width: 60%;
 }
 
 .skills__close .skills__list {
