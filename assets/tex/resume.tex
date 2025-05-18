@@ -1,0 +1,153 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0pt}
+\newcommand{\uhref}[2]{\href{#1}{\underline{#2}}}
+\usepackage{xcolor}
+\definecolor{mygray}{rgb}{.2,.23,.25}%#333a3f
+\AtBeginDocument{\color{mygray}}
+\pagenumbering{gobble}
+\usepackage{fontawesome5}
+
+
+
+
+
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Sepehr Fazeli}}\\[0.95em]
+    \faMapMarker\enspace94469 Deggendorf, Bayern, Germany \, | \, 
+    \faEnvelope\enspace\uhref{mailto:sepehr.fazeli@web.de}{sepehr.fazeli@web.de} \, | \, \faMobile\enspace\uhref{tel:+4915753239701}{+4915753239701}\\[0.25em]
+    \faLinkedin\enspace\uhref{https://linkedin.com/in/sepehr-fazeli}{linkedin.com/in/sepehr-fazeli} \, | \, \faGithub\enspace\uhref{https://github.com/sepehrfazeli}{github.com/sepehrfazeli} \, | \, \faGitlab\enspace\uhref{https://mygit.th-deg.de/sf07627}{mygit.th-deg.de/sf07627}
+\end{center}
+\vspace{-2em}
+
+
+%--------------------%
+%      SUMMARY       %
+%--------------------%
+\newcommand{\summaryline}{-1.9em} 
+\section*{Summary}
+\vspace{-0.8em}
+\hline
+\vspace{0.2em}
+Frontend Engineer with 4+ years’ experience building React-based enterprise applications, managing databases, and automating CI/CD pipelines in cloud environments. 
+\vspace{-1.5em}
+
+%--------------------%
+%      SKILLS        %
+%--------------------%
+\newcommand{\skillspacing}{0.1em}
+\section*{Skills}
+\vspace{-0.8em}
+\hline
+\vspace{0.2em}
+\begin{tabularx}{0.2\linewidth}{ l l }
+\textbf{Frontend:} & React · Next.js(SSR/CSR) · TypeScript · JavaScript · SASS · WebGL/Three.js \\[\skillspacing]
+\textbf{Backend:} & Node.js · C\# (.NET) · REST · GraphQL · RabbitMQ \\[\skillspacing]
+\textbf{Databases \& BI Analytics:} & PostgreSQL · MongoDB · Matomo event tracking \& dashboards \\[\skillspacing]
+\textbf{DevOps \& Cloud:} & Docker · Kubernetes · GitLab CI/CD · Jenkins · AWS (EC2, S3) \\[\skillspacing]
+\textbf{Agile \& Methodologies:} & Agile · Kanban · Jira · Confluence · TDD (Jest, RTL, Cypress) \\[\skillspacing]
+\textbf{Tools \& Collaboration} & Git · Linux · Postman · UAT facilitation \& stakeholder presentations\\[0.5em]
+\textbf{Languages} & English (professional) · German B1 (actively pursuing B2 certification)
+\end{tabularx}
+\vspace{-1em}
+
+
+%--------------------%
+%      EXPERIENCE     %
+%--------------------%
+\section*{Professional Experience}
+\vspace{-0.8em}
+\hline
+\vspace{0.2em}
+
+\textbf{Dassault Systèmes Deutschland GmbH} \hfill Munich, Germany | Oct 2023 -- Present \\
+\\
+Contributing concurrently to three parallel projects (3DEXCITE Create \& Show, Tetra Pak) within a cross-functional team across India and Germany, delivering both internal and external customer solutions in an Agile environment.
+\begin{itemize}[leftmargin=*]
+    \item \textit{Tetra Pak} - \textit{Frontend Engineer}
+        \begin{itemize}[leftmargin=*]
+            \item Developed 20+ features, including authentication, API integration, and modern design development using React, TypeScript, Redux, WebGL, Tailwind, and JWT, meeting customer needs, and delivering a high-quality application.
+            \item Containerized the frontend as a microservice—writing Dockerfiles and Helm charts—and integrated it into our Jenkins-driven Kubernetes CI/CD pipeline.
+            \item Implemented 18+ technical event schemas into non-technical dashboards using Matomo, improving data-driven decision-making for client-facing features.
+            \item Presented in UAT sessions with Tetra Pak stakeholders to demo new features.
+        \end{itemize}
+    \item \textit{3DEXCITE Create \& Show} - \textit{Frontend Engineer}
+        \begin{itemize}[leftmargin=*]
+            \item Closed 15+ Jira issues, including component redesign, performance issues, and API architecture change integration, using React, TypeScript, SQL, Redux, MUI, Storybook, WebAssembly, and RabbitMQ.
+            \item Led a customer-facing documentation development interactive application with Hugo, Hextra, and Tailwind, applying custom design and animations to improve usability and brand alignment.
+        \end{itemize}
+    \item \textit{3DEXCITE DELTAGEN} -  \textit{Master Thesis}
+        \begin{itemize}[leftmargin=*]
+            \item Led a benchmark study to find alternative C\# image processing libraries, achieving a 400\% speedup, 50\% lower memory usage, and €5K/year in licensing savings.
+        \end{itemize}
+    \item \textit{3DEXPERIENCE Apex Cloud} - \textit{Frontend Engineer}
+        \begin{itemize}[leftmargin=*]
+            \item Modernized the legacy code base with React, ThreeJS, React Query, and Storybook, upgraded/replaced 8+ libraries, improving maintainability.
+            \item Deployed it on AWS EC2 instances hosted on a custom domain for demo purposes, gaining approval from 10+ stakeholders to resume development after a year of stagnation.
+        \end{itemize}
+\end{itemize}
+
+\textbf{SUMM AI} \hfill Munich, Germany | Sep 2022 -- Nov 2022 \\
+\textit{Frontend Developer} 
+\begin{itemize}[leftmargin=*]
+    \item Implemented a complete frontend app redesign in collaboration with a UI/UX designer using React, TypeScript, MUI, and Redux, enhancing the interface and improving user experience.
+    \item Configured ESLint and Prettier to enforce consistent code formatting, reducing style-related errors and elevating code quality.
+\end{itemize}
+
+\textbf{Gport} \hfill Tehran, Iran | Jan 2021 -- Feb 2022  \\
+\textit{Frontend Developer}
+\begin{itemize}[leftmargin=*]
+    \item Built a new frontend using React, TypeScript, Storybook, and MobX, integrating 10+ RESTful endpoints and enforcing 90\%+ test coverage (Jest, Testing Library) to ensure reliability.
+    \item Documented components with Storybook, streamlining developer onboarding and reducing new component implementation time.
+\end{itemize}
+\vspace{-1em}
+
+
+%--------------------%
+%      EDUCATION      %
+%--------------------%
+\section*{Education}
+\vspace{-0.8em}
+\hline
+\vspace{0.2em}
+
+\textbf{M.Sc. in Computer Science} \hfill Mar 2023 -- Mar 2025 \\
+Deggendorf Institute of Technology\\
+\textit{Relevant Coursework: Cloud Computing and Virtualization · Data Analytics · Architecture and Systems Engineering}\\
+\\
+\textbf{B.Sc. in Electrical Engineering} \hfill Mar 2016 -- Mar 2019 \\
+Semnan University\\
+\vspace{-2em}
+
+%----------------------------%
+%  Professional Development  %
+%----------------------------%
+\section*{Professional Development}
+\vspace{-0.8em}
+\hline
+\vspace{0.2em}
+\textbf{AWS Educate Introduction to Cloud 101} | Amazon Web Services (AWS)\hfill Apr 2025\\
+\textbf{Front-End Engineer Career Path} | Codecademy \hfill Jan 2021\\
+\textbf{Learn Node.js} | Codecademy \hfill Jan 2021\\
+
+
+
+
+\end{document}
