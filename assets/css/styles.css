@@ -60,6 +60,13 @@
   --z-modal: 1000;
 }
 
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 /* Font size for large devices */
 @media screen and (min-width: 968px) {
   :root {
@@ -126,6 +133,7 @@ body {
   overflow-y: scroll;
 }
 main {
+  /* position: absolute; */
   overflow: hidden;
 }
 
