@@ -135,8 +135,13 @@ themeButton.addEventListener('click', () => {
   document.body.classList.toggle(darkTheme)
   themeButton.classList.toggle(iconTheme)
   // we save the theme and the current icon that the user chose 
-  localStorage.setItem('selected-themee', getCurrentTheme())
+  localStorage.setItem('selected-theme', getCurrentTheme())
   localStorage.setItem('selected-icon', getCurrentIcon())
+  
+  // dispatch a custom event to notify other parts of the application about the theme change
+  window.dispatchEvent(new CustomEvent('themeChanged', { 
+    detail: { theme: getCurrentTheme() } 
+  }));
 })
 
 
