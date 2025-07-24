@@ -57,27 +57,25 @@ async function initAnimation() {
 
   Array(200).fill().forEach(addStars);
 
-  scene.background = new Color('hsl(211, 28%, 12%)')
-  const selectedTheme = localStorage.getItem('selected-theme');
-
   // Set background color based on theme
   function updateScene() {
     const currentTheme = localStorage.getItem('selected-theme');
     console.log('Current theme:', currentTheme);
     
-    if (currentTheme === 'dark') {
-      // Dark theme
-      scene.background = new Color('hsl(211, 28%, 12%)');
-      // Update all stars to white
-      stars.forEach(star => {
-        star.material.color.set(0xffffff);
-      });
-    } else {
+    // Default to dark theme if no theme is set
+    if (currentTheme === 'light') {
       // Light theme
       scene.background = new Color('hsl(211, 60%, 99%)');
       // Update all stars to blue
       stars.forEach(star => {
         star.material.color.set('hsla(211, 69%, 61%, 1.00)');
+      });
+    } else {
+      // Dark theme (default)
+      scene.background = new Color('hsl(211, 28%, 12%)');
+      // Update all stars to white
+      stars.forEach(star => {
+        star.material.color.set(0xffffff);
       });
     }
   }
