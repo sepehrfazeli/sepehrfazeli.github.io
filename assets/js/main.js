@@ -1,3 +1,15 @@
+// Lazy load Swiper only when needed
+let swiperLoaded = false;
+
+async function loadSwiper() {
+  if (!swiperLoaded) {
+    const { default: Swiper } = await import('swiper/bundle');
+    await import('swiper/css/bundle');
+    swiperLoaded = true;
+    return Swiper;
+  }
+}
+
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
@@ -86,19 +98,30 @@ modalCloses.forEach((modalClose) => {
 });
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-var swiper = new Swiper(".portfolio__container", {
-  cssMode: true,
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  mousewheel: true,
-  keyboard: true,
+async function initSwiper() {
+  const Swiper = await loadSwiper();
+  var swiper = new Swiper(".portfolio__container", {
+    cssMode: true,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
+}
+
+// Initialize Swiper when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  const portfolioSection = document.querySelector('.portfolio__container');
+  if (portfolioSection) {
+    initSwiper();
+  }
 });
 
 /*==================== SHOW SCROLL UP ====================*/
